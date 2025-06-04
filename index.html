@@ -8,32 +8,146 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
+        <nav style="display: flex; justify-content: flex-end; padding-right: 40px;">
+            <ul style="display: flex; list-style: none; margin: 0 0 0 0; padding: 0;">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This is a brief introduction about myself.</p>
+    <main class="main-flex">
+        <section class="sidebar">
+            <div class="cell section-profile">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFuvhh5rx9jZg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701712869931?e=1754524800&v=beta&t=vTg08H5F84IugqgW19n_S_opCWsGhT2pVD7EIbRDj08" alt="Profile Image" class="profile-img">
+                <h2>Anurag</h2>
+                <p class="one-liner">Aspiring Developer & Lifelong Learner</p>
+
+                <div style="display: flex; justify-content: flex-end; gap: 14px; margin-top: 10px;">
+                    <a class="plain-link" href="mailto:makanurag@gmail.com" id="copy-email" style="cursor:pointer;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" title="Copy Email" style="width:20px;vertical-align:middle;">
+                    </a>
+                    <a class="plain-link" href="https://www.linkedin.com/in/anurag-97917088/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" title="LinkedIn" style="width:20px;vertical-align:middle;">
+                    </a>
+                    <a class="plain-link" href="https://github.com/anuragmakhan/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" style="width:20px;vertical-align:middle;">
+                    </a>
+                </div>
+                <script>
+                document.getElementById('copy-email').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    navigator.clipboard.writeText('makanurag@gmail.com');
+                    alert('Email address copied!');
+                });
+                </script>
+
+            </div>
+            
+            <div class="cell tech-stack">
+                <h2>Tech Stack</h2>
+                <div class="tech-icons">
+                    <!-- Languages -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C">
+                    <!-- Tools -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" title="Jira">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" title="Jenkins">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker">
+                    <!-- Scripting -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Shell" title="Shell">
+                    <!-- IDEs -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code">
+                </div>
+            </div>
+            <div class="cell tools-section">
+                <h2>Tools</h2>
+                <div class="tools-list" style="font-weight:bold; display:flex; gap:16px; flex-wrap:wrap;">
+                    <span>GDB</span>
+                    <span>Valgrind</span>
+                    <span>Klocwork</span>
+                    <span>Gcov</span>
+                    <span>Wireshark</span>
+                </div>
+            </div>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of the projects I've worked on.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at myemail@example.com.</p>
+        <section class="content">
+            <div class="cell" id="about">
+                <h2>About Me</h2>
+                <p>
+                    Experienced software engineer with 5.6+ years in the Telecom Domain, holding a Master’s degree in Computer Engineering from NIT Surat and currently contributing to Mavenir’s 5G ORAN Cu-Cp L3 team, specializing in advanced cloud-native virtualization for next-gen mobile networks. Proficient in C++, Python, and Linux, with a strong background in unit testing and automation. Demonstrates robust CI/CD pipeline integration practices for faster delivery and deployment cycles. Proven track record of applying theoretical knowledge in practical settings, demonstrating a commitment to achieving optimal results.Experienced in getting things done through effective debugging, problem-solving, team collaboration, and decisive decision-making.Skilled in designing efficient, optimized solutions for complex computational problems, focusing on efficient data structures and algorithms.
+                </p>
+            </div>
+            <div class="cell" id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>Master of Technology in Computer Engineering</strong> - National Institute of Technology, Surat (NIT Surat) | 2017 - 2019
+                    </li>
+                    <li>
+                        <strong>Bachelor of Technology in Computer Science and Engineering</strong> - National Institute of Technology, Surat (NIT Surat) | 2013 - 2017
+                    </li>
+                </ul>
+            </div>
+            <div class="cell" id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I've worked on.</p>
+            </div>
+            <div class="cell" id="experience">
+                <h2>Work Experience</h2>
+                <div class="exp-role">
+                    <strong>MTS-III | Mavenir System Pvt. Ltd</strong>
+                    <span style="float:right;">C++ | Apr 2025 - Present</span>
+                    <ul>
+                        <li>
+                            <b>Load Balancing:</b> Designed and implemented a UE distribution mechanism in CuCp to offload UEs from congested cells to neighboring ones. Developed an algorithm to evaluate real-time cell load metrics and execute dynamic UE redirection decisions based on configurable thresholds. Ensured thread safety and real-time responsiveness through multithreaded design and lock-minimized access patterns.
+                        </li>
+                    </ul>
+                </div>
+                <div class="exp-role">
+                    <strong>MTS-II | Mavenir System Pvt. Ltd</strong>
+                    <span style="float:right;">C++, Python | June 2021 - Apr 2024</span>
+                    <ul>
+                        <li>
+                            <b>CuCp Capacity Optimization:</b> Developed and optimized multithreaded, performance-critical routines for call signal processing, improving processing efficiency by ~35%. Applied advanced memory management, data structure optimization to improve CuCp capacity to accommodate more UEs, increasing overall capacity by ~38%.
+                        </li>
+                        <li>
+                            <b>N2 Flex:</b> Designed and developed the N2 Flex feature in the CuCp component, enabling seamless user mobility and automatic failover during AMF outages. Developed a robust AMF selection algorithm leveraging efficient data structures and fault-tolerant logic, significantly enhancing system resilience and availability.
+                        </li>
+                        <li>
+                            <b>Network Slicing:</b> Written code to manage multiple Cu-Up instances and dynamically select optimal Cu-Up nodes based on real-time capacity metrics. Applied core object-oriented programming (OOP) principles to design modular, extensible components that enhanced scalability, improved resource utilization.
+                        </li>
+                        <li>
+                            <b>Awards:</b> Spotlight award for Q1 2024 and Q3 2022.
+                        </li>
+                        <li>
+                            <b>Automation / Scripting / Unit Testing:</b> Led the automation and development of Mavenir's test tools for unit testing, designing frameworks and comprehensive test cases for code coverage and quick debugging. Developed automation tools and Python scripts to validate 5G protocol stack logs, graph performance metrics, and manage test cases in CI/CD (Jenkins) flows.
+                        </li>
+                    </ul>
+                </div>
+                <div class="exp-role">
+                    <strong>MTS-I | Mavenir System Pvt. Ltd</strong>
+                    <span style="float:right;">Dec 2019 - June 2021</span>
+                    <ul>
+                        <li>
+                            <b>IPv6 Support Enhancement:</b> Spearheaded the implementation of IPv6 support at SCTP and gRPC interfaces for the CuCp product, enhancing the platform's compatibility with modern networking standards.
+                        </li>
+                        <li>
+                            <b>Automation / Scripting / Unit Testing:</b> Designed and implemented an ASN generation script, ensuring compliance with the 3GPP 17.5 standard for 5G messaging. Crafted automation scripts for call model simulations, intensifying the testing game by evaluating system performance under diverse communication scenarios.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2023 My Portfolio</p>
     </footer>
-    <script src="scripts/app.js"></script>
 </body>
 </html>
