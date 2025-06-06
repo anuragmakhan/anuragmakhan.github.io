@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <header>
-        <nav style="display: flex; justify-content: flex-end; padding-right: 40px;">
-            <ul style="display: flex; list-style: none; margin: 0 0 0 0; padding: 0;">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
+        <div style="display: flex; align-items: center; width: 90%; margin: 0 auto;">
+            <span class="typing" style="text-align: left; margin-right: 32px;"></span>
+            <nav style="flex: 1; display: flex; justify-content: flex-end;">
+                <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main-flex">
         <section class="sidebar">
@@ -46,7 +50,14 @@
                 </script>
 
             </div>
-            
+        <script type="text/javascript">
+            var typed = new Typed('.typing',{
+            strings: ["Coder", "Developer", "AI Enthusiast"],
+            loop: true,
+            typeSpeed: 65,
+            backSpeed: 65
+            });
+        </script>
             <div class="cell tech-stack">
                 <h2>Tech Stack</h2>
                 <div class="tech-icons">
